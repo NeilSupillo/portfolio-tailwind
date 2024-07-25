@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body class="dark:text-gray-200 dark:bg-black">
+    <header
+      class="fixed xl:block w-full py-4 lg:px-0 px-5 z-[999] duration-300 dark:bg-blac"
+    >
+      <nav class="flex justify-between items-center max-w-6xl mx-auto px-2">
+        <div class="flex gap-4 items-center">
+          <div>
+            <h4 class="font-bold text-lg uppercase">Neil Bernard Supillo</h4>
+          </div>
+        </div>
+        <ul class="gap-10 md:flex hidden hover:*:text-primary *:duration-200">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+          <li class="theme-switch">
+            <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+          </li>
+        </ul>
+
+        <span class="theme-switch md:hidden">
+          <i class="fa-solid fa-circle-half-stroke cursor-pointer"></i>
+        </span>
+        <span id="menubar" class="cursor-pointer md:hidden text-xl">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+      </nav>
+    </header>
+
+    <span
+      id="backdrop"
+      class="fixed h-screen hidden bg-black/10 backdrop-blur-sm z-[997] inset-0 w-full"
+    ></span>
+
+    <ul
+      id="mobile-nav"
+      class="gap-10 text-xl md:hidden dark:bg-slate-800 bg-primary text-white flex-center flex-col fixed w-full h-0 overflow-hidden bottom-0 duration-200 rounded-t-3xl left-0 z-[998]"
+    >
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#about">About Us</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contact">Contact Us</a>
+      </li>
+    </ul>
+
+    <!-- Home -->
+    <section
+      id="home"
+      class="min-h-screen container grid place-items-center relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:size-full before:-z-[1] before:transform before:-translate-x-1/2"
+    >
+      <div
+        class="w-full pt-20 grid md:grid-cols-6 h-full items-center max-w-6xl justify-around"
+      >
+        <div class="lg:col-span-3 md:col-span-3">
+          <img
+            src="./assets/profile.jpg"
+            class="w-2/3 mx-auto md:w-full max-w-96 md:mt-0 mt-5 profile-img"
+            alt=""
+          />
+        </div>
+        <div
+          class="lg:col-span-3 sm:pl-2 md:col-span-3 md:text-left text-center"
+        >
+          <div>
+            <h5 class="font-medium text-gray-600 dark:text-gray-200">Hello</h5>
+            <h1
+              class="sm:text-5xl text-4xl dark:text-white !leading-normal relative font-medium"
+            >
+              I'm <span class="text-primary">Neil</span> <br />
+              a Programmer
+            </h1>
+            <button class="btn border-black mt-5">
+              <i class="fa-regular fa-envelope"></i>
+              <a class="text-primary" href="mailto:examplemail@gmail.com"
+                >neilsupillo@gmail.com</a
+              >
+            </button>
+            <button
+              class="font-semibold dark:text-gray-200 border-b-2 border-gray-700 ml-4"
+              onclick="window.open('./assets/resume.pdf')"
+            >
+              <i class="fa-solid"></i> See Resume
+            </button>
+          </div>
+          <div class="md:w-96 md:ml-auto flex mt-9 gap-2 dark:text-gray-300">
+            <i class="fa-solid fa-border-all mt-0.5 md:inline-block hidden"></i>
+            <p class="text-xs text-balance leading-5 max-w-md px-2 mx-auto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+              architecto debitis molestias doloremque labore autem dolorem in
+              eius obcaecati! Amet beatae omnis.
+            </p>
+          </div>
+          <div
+            class="flex items-center md:justify-end justify-center dark:text-gray-200 text-gray-600 gap-6 mt-9"
+          >
+            <div class="flex justify-end gap-3">
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container min-h-screen flex-center">
+      <div class="">
+        <div class="text-center text-balance">
+          <h3>What I Know</h3>
+          <p class="px-2 mt-3 text-gray-500">
+            Lorem ipsum, dolor quam recusandae molestias a consectetur illum aut
+            iste dolore. sit amet consectetur adipisicing elit. Dicta eligendi
+            voluptate eos rem maiores voluptas mollitia debitis natus impedit
+            excepturi quasi, quam recusandae molestias a consectetur illum aut
+            iste dolore.
+          </p>
+        </div>
+        <div
+          class="max-w-2xl grid md:grid-cols-1 gap-6 px-2 sm:grid-cols-3 *:text-lg *:sm:max-w-full *:max-w-sm hover:*:brightness-90 *:mx-auto *:sm:text-left *:text-center *:hover:cursor-pointer *:shadow-sm mt-10 mx-auto *:rounded-xl *:bg-gray-100 *:dark:bg-slate-800 *:p-7 *:flex *:md:flex-row *:flex-col *:items-center *:gap-12"
+        >
+          <div>
+            <div class="*:text-primary">
+              <i class="fa-regular fa-object-ungroup"></i>
+              <h6 class="font-semibold whitespace-nowrap mt-3">
+                Website Design
+              </h6>
+            </div>
+            <div>
+              <p
+                class="text-xs text-gray-600 dark:text-gray-400 leading-5 text-balance"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                corporis tempora possimus?
+              </p>
+            </div>
+            <i
+              class="fa-solid fa-arrow-up-long text-primary rotate-45 cursor-pointer"
+            ></i>
+          </div>
+          <div>
+            <div class="*:text-primary">
+              <i class="fa-solid fa-pen-nib"></i>
+              <h6 class="font-semibold whitespace-nowrap mt-3">Ui Ux Design</h6>
+            </div>
+            <div>
+              <p
+                class="text-xs text-gray-600 dark:text-gray-400 leading-5 text-balance"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                corporis tempora possimus?
+              </p>
+            </div>
+            <i
+              class="fa-solid fa-arrow-up-long text-primary rotate-45 cursor-pointer"
+            ></i>
+          </div>
+          <div>
+            <div class="*:text-primary">
+              <i class="fa-solid fa-people-group"></i>
+              <h6 class="font-semibold whitespace-nowrap mt-3">Teams Play</h6>
+            </div>
+            <div>
+              <p
+                class="text-xs text-gray-600 dark:text-gray-400 leading-5 text-balance"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+                corporis tempora possimus?
+              </p>
+            </div>
+            <i
+              class="fa-solid fa-arrow-up-long text-primary rotate-45 cursor-pointer"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="relative mt-10 scroll-mt-12">
+      <p class="text-center text-[#121212]">Explore My</p>
+      <h1 class="text-[2.6rem] text-center leading-[1.2]">Experience</h1>
+      <div class="flex justify-center flex-col">
+        <div class="flex flex-wrap justify-center gap-[1.4rem] my-8">
+          <!-- Frontend Development -->
+          <div
+            class="flex-1 max-w-[400px] shadow-[rgba(0,0,0,0.1)_0px_4px_12px] p-4 rounded-[2rem] border border-neutral-400 text-center bg-white"
+          >
+            <h2 class="text-[#121212] font-semibold text-2xl mb-4">
+              Frontend Development
+            </h2>
+            <div
+              class="flex flex-wrap flex-row gap-4 justify-around text-initial"
+            >
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/html.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">HTML</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Experienced</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/css.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">CSS</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Experienced</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/js.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">JavaScript</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Intermediate</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/bootstrap.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">Bootstrap</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Basic</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/react.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">React</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Backend Development -->
+          <div
+            class="flex-1 max-w-[400px] shadow-[rgba(0,0,0,0.1)_0px_4px_12px] p-4 rounded-[2rem] border border-neutral-400 text-center bg-white"
+          >
+            <h2 class="text-[#121212] font-semibold text-2xl mb-4">
+              Backend Development
+            </h2>
+            <div
+              class="flex flex-wrap flex-row gap-4 justify-around text-initial"
+            >
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/mongo.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">Mongo DB</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Basic</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/java.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">Java</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Basic</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/node.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">Node JS</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Intermediate</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/express.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">Express JS</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <!-- Others -->
+          <div
+            class="flex-1 max-w-[400px] shadow-[rgba(0,0,0,0.1)_0px_4px_12px] p-4 rounded-[2rem] border border-neutral-400 text-center bg-white"
+          >
+            <h2 class="text-[#121212] font-semibold text-2xl mb-4">Others</h2>
+            <div
+              class="flex flex-wrap flex-row gap-4 justify-around text-initial"
+            >
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/github.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">GitHub</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Intermediate</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/vercel.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">Vercel</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Basic</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/vscode.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">VS Code</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Intermediate</p>
+                </div>
+              </article>
+              <article class="flex w-40 gap-4">
+                <img
+                  src="./assets/git.png"
+                  alt="Experience icon"
+                  class="h-8 cursor-default"
+                />
+                <div>
+                  <h4 class="text-[#121212]">Git</h4>
+                  <p class="text-[0.8rem] text-[#121212]">Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="py-12 mx-4 md:mx-8 lg:mx-16">
+      <p class="text-center text-gray-700 text-lg">Browse My Recent</p>
+      <h1 class="text-center text-4xl font-bold mb-8">Projects</h1>
+
+      <div id="myDIV" class="flex justify-center mb-8">
+        <button
+          class="btn2 bts1 btnp btn bg-blue-500 text-white px-4 py-2 mx-2 rounded project-btn active"
+        >
+          w/ frameworks
+        </button>
+        <button
+          class="btn1 bts2 btnp btn bg-blue-500 text-white px-4 py-2 mx-2 rounded project-btn"
+        >
+          w/o frameworks
+        </button>
+      </div>
+
+      <div class="experience-details-container">
+        <div
+          class="about-containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        >
+          <!-- w/ framework-->
+          <div
+            class="pro details-container bg-white shadow-md rounded-lg p-6 with"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/bookmanagement.png"
+                alt="Project 2"
+                class="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <h2 class="text-xl font-semibold mt-4">Bookstore Management</h2>
+            <p class="text-gray-600 mt-2">
+              A website built using the
+              <span class="font-bold">"MERN"</span> stack that allows users to
+              store and manage their books.
+            </p>
+            <div class="flex justify-between mt-4">
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://github.com/NeilSupillo/book-management')"
+              >
+                Github
+              </button>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://book-management-client-phi.vercel.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div
+            class="pro details-container bg-white shadow-md rounded-lg p-6 with"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/keeper.png"
+                alt="Project 3"
+                class="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <h2 class="text-xl font-semibold mt-4">Keeper</h2>
+            <p class="text-gray-600 mt-2">
+              A website built using the
+              <span class="font-bold">"MERN"</span> stack that allows users to
+              write notes.
+            </p>
+            <div class="flex justify-between mt-4">
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://github.com/NeilSupillo/keeper')"
+              >
+                Github
+              </button>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://keeper-frontend-sigma.vercel.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div
+            class="pro details-container bg-white shadow-md rounded-lg p-6 with"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/qr.png"
+                alt="Project 3"
+                class="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <h2 class="text-xl font-semibold mt-4">QR Scanner and Generator</h2>
+            <p class="text-gray-600 mt-2">
+              A website built using the
+              <span class="font-bold">"ERN"</span> stack that allows users to
+              scan and generate a QR code.
+            </p>
+            <div class="flex justify-between mt-4">
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://github.com/NeilSupillo/qr-generator-and-scanner')"
+              >
+                Github
+              </button>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://qr-generator-and-scanner.vercel.app/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+
+        <!-- w/o framework-->
+        <div
+          class="about-containers grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8"
+        >
+          <div
+            class="pro details-container bg-white shadow-md rounded-lg p-6 without hide"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/pro1.png"
+                alt="Project 3"
+                class="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <h2 class="text-xl font-semibold mt-4">One Piece Crew</h2>
+            <p class="text-gray-600 mt-2">See the one-piece crew bounty.</p>
+            <div class="flex justify-between mt-4">
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://github.com/NeilSupillo/Onepiece-bounty')"
+              >
+                Github
+              </button>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://neilsupillo.github.io/Onepiece-bounty/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div
+            class="pro details-container bg-white shadow-md rounded-lg p-6 without hide"
+          >
+            <div class="article-container">
+              <img
+                src="./assets/project-pic/dicegame.png"
+                alt="Project 3"
+                class="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <h2 class="text-xl font-semibold mt-4">Dice Game</h2>
+            <p class="text-gray-600 mt-2">An Online Random Dice</p>
+            <div class="flex justify-between mt-4">
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://github.com/NeilSupillo/diceGame')"
+              >
+                Github
+              </button>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded"
+                onclick="window.open('https://neilsupillo.github.io/diceGame/')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container min-h-screen flex-center">
+      <div class="text-center text-balance">
+        <h3>My Projects</h3>
+        <p class="px-2 mt-3 text-gray-500">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime itaque
+          totam, ut asperiores placeat saepe earum molestias deleniti,
+          repudiandae animi sit laudantium aliquam delectus assumenda numquam
+          ab. Dolorum, illo laborum!
+        </p>
+
+        <br />
+        <div class="flex-center gap-4">
+          <button class="btn btn-filled">Website</button>
+          <button class="btn btn-outline">Mobile App</button>
+          <button class="btn btn-outline">Figma</button>
+        </div>
+        <br />
+        <div
+          class="*:w-full grid mx-auto md:grid-rows-2 md:grid-cols-2 max-w-4xl md:px-0 px-10 *:h-full *:object-cover *:border-4 *:dark:border-white *:rounded-md gap-4 *:cursor-pointer group hover:*:!grayscale-0 *:hover:grayscale *:duration-1000"
+        >
+          <img class="" src="./assets/pro1.jpg" alt="" />
+          <img src="./assets/pro3.jpg" class="row-span-2" alt="" />
+          <img src="./assets/pro2.jpg" class="" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="container relative max-w-4xl mx-auto min-h-screen flex-center px-5"
+    >
+      <div class="pb-10">
+        <div class="text-center">
+          <h3>Contact Me</h3>
+          <p class="px-2 mt-3 text-gray-500">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            itaque totam, ut asperiores placeat saepe earum molestias deleniti,
+            repudiandae animi sit laudantium aliquam delectus assumenda numquam
+            ab. Dolorum, illo laborum!
+          </p>
+        </div>
+        <div
+          class="mt-12 md:relative flex flex-col gap-5 sm:max-w-full mx-auto max-w-xs"
+        >
+          <div
+            class="dark:bg-slate-800 bg-slate-50 dark:text-gray-100 text-gray-800 rounded-lg shadow-xl mx-auto md:w-2/3 py-14 px-7 w-full"
+          >
+            <h3 class="font-semibold text-3xl">
+              Send Us A <br /><span class="text-primary">Message</span>
+            </h3>
+            <form class="*:flex *:flex-col *:gap-1 mt-5 md:w-2/3 w-full">
+              <div class="">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" />
+              </div>
+              <div class="">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div class="">
+                <label for="msg">Message</label>
+                <textarea id="msg" placeholder="Enter your message"></textarea>
+              </div>
+              <button class="btn btn-filled ml-auto">Send to Us</button>
+            </form>
+          </div>
+          <div
+            class="dark:bg-gray-700 bg-white py-12 px-7 md:absolute lg:-right-9 right-28 rounded-xl shadow-xl md:w-2/5 h-5/6 top-28 w-full mx-auto"
+          >
+            <h3 class="font-semibold text-2xl border-b pb-4 border-gray-600">
+              Drop In Our <br />Office <span class="text-primary">.</span>
+            </h3>
+            <div class="py-4">
+              <p class="text-xs text-gray-400 leading-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus nihil expedita voluptate corporis doloremque id,
+                facilis
+              </p>
+              <ul class="*:flex *:gap-4 *:items-center *:mt-4">
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div>
+                    <h2>Ho Chi Mini City</h2>
+                    <address class="text-xs">13P John doe Street,Us</address>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>codeaprogram@gmail.com</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+123 456 7890</p>
+                </li>
+              </ul>
+              <div
+                class="flex items-center md:justify-end justify-center dark:text-gray-200 text-gray-600 gap-6 mt-9"
+              >
+                <p class="text-xs">Follow Us</p>
+                <div class="flex justify-end gap-3">
+                  <a href="#" class="social-icon">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="dark:bg-slate-700 bg-slate-100 text-center py-2">
+      Copyright &copy; 2024
+      <ul class="flex-center gap-5 py-4 text-sm">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li><a href="#">Projects</a></li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script>
+      const header = document.querySelector("header");
+
+      const toggleClasses = (element, classes, condition) => {
+        classes.forEach((className) => {
+          element.classList.toggle(className, condition);
+        });
+      };
+
+      window.addEventListener("scroll", () => {
+        toggleClasses(
+          header,
+          [
+            "shadow-lg",
+            "dark:shadow-slate-700",
+            "dark:sm:bg-black",
+            "dark:bg-black",
+            "dark:text-white",
+            "bg-white",
+          ],
+          window.scrollY > 0
+        );
+      });
+    </script>
+  </body>
+</html>
