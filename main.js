@@ -30,30 +30,3 @@ options.forEach((item) =>
 );
 
 ELE.classList.add(localStorage.getItem("theme"));
-
-document.addEventListener("DOMContentLoaded", function () {
-  const btns1 = document.querySelector(".bts1");
-  const btns2 = document.querySelector(".bts2");
-  const withFramework = document.querySelectorAll(".with");
-  const withoutFramework = document.querySelectorAll(".without");
-
-  function showWithFramework() {
-    withFramework.forEach((el) => el.classList.remove("hidden"));
-    withoutFramework.forEach((el) => el.classList.add("hidden"));
-    btns1.classList.add("active");
-    btns2.classList.remove("active");
-  }
-
-  function showWithoutFramework() {
-    withFramework.forEach((el) => el.classList.add("hidden"));
-    withoutFramework.forEach((el) => el.classList.remove("hidden"));
-    btns1.classList.remove("active");
-    btns2.classList.add("active");
-  }
-
-  btns1.addEventListener("click", showWithFramework);
-  btns2.addEventListener("click", showWithoutFramework);
-
-  // Initially show w/ framework projects
-  showWithFramework();
-});
